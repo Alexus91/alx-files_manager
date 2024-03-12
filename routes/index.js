@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import AppController from '../controllers/AppController';
-import UsersController from '../controllers/UsersController';
+import { postNew } from '../controllers/UsersController.js';
 
 const router = Router();
 
@@ -8,6 +8,6 @@ router.get('/status', AppController.getStatus);
 router.get('/stats', AppController.getStats);
 
 // Add the new route for creating a new user
-router.post('/users', UsersController.postNew);
+router.post('/users', postNew);
 
 export default router;

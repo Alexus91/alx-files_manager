@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 import sha1 from 'sha1';
 import { ObjectID } from 'mongodb';
 import Queue from 'bull';
@@ -60,5 +61,4 @@ class UsersController {
   }
 }
 
-export default UsersController; // Changed the export statement
-
+module.exports = UsersController;

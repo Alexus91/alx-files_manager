@@ -60,4 +60,5 @@ class UsersController {
   }
 }
 
-module.exports = UsersController;
+export default UsersController; // Changed the export statement
+
